@@ -18,7 +18,4 @@ def guessing_game (current_guess, random_number):
     else: 
         tries = tries+1
         print("Congrats, you guessed it in ",tries," tries!")
-try:
-    guessing_game(current_guess, random_number)
-except: 
-    current_guess = int(input("Not a valid number, try again"))
+guessing_game (current_guess, random_number)
