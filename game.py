@@ -7,7 +7,7 @@ first_guess = int(input("Can you guess what number I'm thinking of between 1-100
 current_guess = first_guess
 def guessing_game (current_guess, random_number):
     tries = 0
-    if current_guess not in range(1,100):
+    if current_guess > 0 and < 101:
         current_guess = int(input("Not in range, please try again"))
     while current_guess != random_number:
         tries = tries+1
